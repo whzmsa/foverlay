@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(foverlay LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Widgets WebEngineWidgets)
+add_executable(foverlay main.cpp)
+target_link_libraries(foverlay PRIVATE Qt6::Widgets Qt6::WebEngineWidgets)
+target_compile_options(foverlay PRIVATE -Wall -Wextra -Wpedantic)
+install(TARGETS foverlay RUNTIME DESTINATION bin)
