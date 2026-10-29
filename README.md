@@ -1,6 +1,9 @@
 # foverlay
 > fullscreen, transparent, click-through browser overlay for linux.
 
+# USE OF AI
+This app was created entirely my Codex. I was too lazy to do it myself.
+
 ## dev
 needs cmake, a c++17 compiler, qt6-base and qt6-webengine. uses x11 or xwayland.
 
